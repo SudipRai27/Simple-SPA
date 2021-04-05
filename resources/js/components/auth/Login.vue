@@ -133,6 +133,7 @@ export default {
       if (this.getErrors) {
         this.$store.dispatch("removeErrors");
       }
+      console.log("here");
       this.$store
         .dispatch("login", this.form)
         .then((res) => {

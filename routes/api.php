@@ -27,5 +27,7 @@ Route::middleware('auth:sanctum')->group(function () {
     include('custom-api/blog.php');
 });
 
+include('custom-api/frontend.php');
+
 Route::post('/register', [RegisterController::class, 'register']);
 Route::post('/login', [LoginController::class, 'login']);

@@ -53,7 +53,7 @@ export default {
 
   async created() {
     try {
-      const res = await axios.get("/api/blogs");
+      const res = await axios.get("/api/frontend/blogs");
       this.blogs = res.data.data;
     } catch (ex) {
       console.log(ex);
